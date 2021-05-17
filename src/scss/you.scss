@@ -1,0 +1,125 @@
+.content {
+    background: #FFFFFF;
+    overflow: hidden;
+}
+
+.you__container {
+    padding-top: 0px;
+    padding-bottom: 40px;
+}
+
+.you__title {
+    font-size: 16px;
+    line-height: 12px;
+    letter-spacing: 0.06em;
+    color: #22356F;
+    margin: 30px 0px 50px 0px;
+    @media (max-width: $md3) {
+        font-size: 24px;
+        line-height: 32px;
+        margin-left: 80px;
+    }
+    @media (max-width: $md4) {
+        font-size: 20px;
+        line-height: 26px;
+        margin-left: 50px;
+    }
+}
+
+.you__subtitle {
+    font-size: 36px;
+    line-height: 53px;
+    letter-spacing: -0.01em;
+    color: #22356F;
+    margin: 0px 0px 60px 0px;
+    white-space: nowrap;
+    @media (max-width: $md3) {
+        font-size: 24px;
+        line-height: 28px;
+        margin-left: 40px;
+        margin-bottom: 20px;
+    }
+    @media (max-width: $md4) {
+        font-size: 4vw;
+        line-height: 24px;
+        margin-left: 40px;
+    }
+}
+
+.you__description {
+    font-size: 16px;
+    line-height: 23px;
+    letter-spacing: 0.1em;
+    color: #FAB63E;
+    white-space: nowrap;
+    margin: 0px 0px 0px 0px;
+    &:hover {
+        opacity: 0.5;
+        }
+        @media (max-width: $md2) {
+            margin-left: 40px;
+        }
+}
+
+.you__row {
+    display: flex;
+    flex-flow: wrap;
+    flex-direction: row-reverse;  
+    justify-content: space-between;  
+    position: relative;
+}
+
+.you__right-col {
+    max-width: 700px;
+    
+}
+
+.you__left-col {
+    align-self: center;
+}
+
+.you__col {
+    position: relative;
+}
+
+.you__img {
+    max-height: 400px;
+    margin: 0px 0px;
+    & img {
+    width: 400px;
+    margin-top: 0px;
+    }
+}
+
+@media (max-width: $md2) {
+    .content {
+        padding-top: 0px;
+    }
+
+    .you__right-col {
+        order: 1;
+    }
+    
+    .you__left-col {
+        order: 2;
+    }
+
+    .you__img {
+        margin-bottom: 0px;
+        
+        & img {
+            max-width: 400px;
+            margin-right: 200px;
+        }
+    }
+
+    .you__right-col {
+        max-width: 100%;
+    }
+
+    .you__img {
+        & img {
+            max-width: 95%;
+        }
+    }
+}
